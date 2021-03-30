@@ -1,0 +1,1 @@
+../build/sssp -p 5 source_list  cal.inter cal.intra cal.partFile

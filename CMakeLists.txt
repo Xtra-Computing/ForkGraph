@@ -1,0 +1,93 @@
+cmake_minimum_required(VERSION 3.12)
+project(ForkGraph)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(ligra)
+include_directories(utils)
+add_definitions("-DWEIGHTED")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fopenmp -march=native -O3 -DOPENMP -DBYTERLE")
+
+add_executable(sssp
+               apps/fork-sssp.C
+               ligra/binary_search.h
+               ligra/blockRadixSort.h
+               ligra/byte-pd.h
+               ligra/byte.h
+               ligra/byteRLE-pd.h
+               ligra/byteRLE.h
+               ligra/compressedVertex.h
+               ligra/edgeMap_utils.h
+               ligra/gettime.h
+               ligra/graph.h
+               ligra/index_map.h
+               ligra/IO.h
+               ligra/ligra.h
+               ligra/maybe.h
+               ligra/nibble-pd.h
+               ligra/nibble.h
+               ligra/parallel.h
+               ligra/parseCommandLine.h
+               ligra/quickSort.h
+               ligra/sequence.h
+               ligra/transpose.h
+               ligra/utils.h
+               ligra/vertex.h
+               ligra/vertexSubset.h
+               ligra/bitmap.hpp)
+
+add_executable(bfs
+               apps/fork-bfs.C
+               ligra/binary_search.h
+               ligra/blockRadixSort.h
+               ligra/byte-pd.h
+               ligra/byte.h
+               ligra/byteRLE-pd.h
+               ligra/byteRLE.h
+               ligra/compressedVertex.h
+               ligra/edgeMap_utils.h
+               ligra/gettime.h
+               ligra/graph.h
+               ligra/index_map.h
+               ligra/IO.h
+               ligra/ligra.h
+               ligra/maybe.h
+               ligra/nibble-pd.h
+               ligra/nibble.h
+               ligra/parallel.h
+               ligra/parseCommandLine.h
+               ligra/quickSort.h
+               ligra/sequence.h
+               ligra/transpose.h
+               ligra/utils.h
+               ligra/vertex.h
+               ligra/vertexSubset.h
+               ligra/bitmap.hpp)
+
+add_executable(ppr
+               apps/fork-ppr.C
+               ligra/binary_search.h
+               ligra/blockRadixSort.h
+               ligra/byte-pd.h
+               ligra/byte.h
+               ligra/byteRLE-pd.h
+               ligra/byteRLE.h
+               ligra/compressedVertex.h
+               ligra/edgeMap_utils.h
+               ligra/gettime.h
+               ligra/graph.h
+               ligra/index_map.h
+               ligra/IO.h
+               ligra/ligra.h
+               ligra/maybe.h
+               ligra/nibble-pd.h
+               ligra/nibble.h
+               ligra/parallel.h
+               ligra/parseCommandLine.h
+               ligra/quickSort.h
+               ligra/sequence.h
+               ligra/transpose.h
+               ligra/utils.h
+               ligra/vertex.h
+               ligra/vertexSubset.h
+               ligra/bitmap.hpp)
