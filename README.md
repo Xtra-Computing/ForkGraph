@@ -53,3 +53,16 @@ Weighted graphs are represented in the weighted adjacency graph format. The file
 **Using SNAP graphs**
 
 Graphs from the [SNAP dataset collection](https://snap.stanford.edu/data/index.html) are commonly used for graph algorithm benchmarks. Pleae use the tool that converts the most common SNAP graph format to the adjacency graph format that ForkGraph accepts. The tool can be found in [GBBS: Graph Based Benchmark Suite](https://github.com/ParAlg/gbbs).
+
+## How to cite ForkGraph
+If you use ForkGraph in your paper, please cite our work.
+
+```
+@inproceedings{lu2021cache,
+  title={Cache-Efficient Fork-Processing Patterns on Large Graphs},
+  author={Lu, Shengliang and Sun, Shixuan and Paul, Johns and Li, Yuchen and He, Bingsheng},
+  booktitle={Proceedings of the 2021 International Conference on Management of Data},
+  pages={1208--1221},
+  year={2021}
+}
+```
